@@ -1,0 +1,11 @@
+<div class='tweets'>
+  <% @tweets.each do |tweet| %>
+    <div class='tweet' style="background-image: url(<%= tweet.image %>)">
+
+      <%= tweet.text %>
+      <br>
+      <%# <a href="contacts">新規登録</a> %>
+    </div>
+  <% end %>
+</div>
+
